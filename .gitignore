@@ -1,0 +1,49 @@
+# OS / editor junk
+.DS_Store
+desktop.ini
+Thumbs.db
+*.swp
+*.swo
+*~
+.idea/
+.vscode/
+
+# Environment / secrets
+.env
+.env.*
+*.secret
+*.secrets
+*.key
+*.pem
+*.p12
+*.pfx
+
+# SSH / GPG / certificates
+.ssh/
+.gnupg/
+
+# Credentials / tokens
+credentials
+credentials.*
+secrets/
+secrets.*
+tokens/
+tokens.*
+
+# Shell / application history
+.bash_history
+.zsh_history
+.python_history
+.node_repl_history
+
+# Logs / temporary files
+*.log
+*.tmp
+*.temp
+tmp/
+temp/
+
+# Backup files
+*.bak
+*.backup
+*.orig
