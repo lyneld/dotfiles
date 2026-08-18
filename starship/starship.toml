@@ -1,12 +1,21 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
-format = '$os$all'
+format = """
+$os$username$hostname in $directory\
+$all\
+"""
 
 [username]
 show_always = true
+format = '[$user](bold #ef9f76)'
 
 [os]
 disabled = false
+format = '[$symbol](bold white)'
+
+[hostname]
+ssh_only = true
+format = '[ 🌐 $hostname](bold #cba6f7)'
 
 [aws]
 symbol = " "
@@ -116,9 +125,6 @@ symbol = " "
 
 [hg_branch]
 symbol = " "
-
-[hostname]
-ssh_symbol = " "
 
 [java]
 symbol = " "
